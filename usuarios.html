@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - Tienda de Portátiles</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/CSS/usuarios.css">
+  
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Tienda de Portátiles</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="ordenes.html">Órdenes</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li class="right">
+                <div id="saludo-usuario" class="saludo-usuario">Hola, Usuario</div>
+                <a href="#" id="login-logout" onclick="logout()">Cerrar Sesión</a>
+                <a href="carrito.html" class="cart">
+                    <img src="Imagenes/Carrito.png" alt="Carrito" class="cart-icon">
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Gestiona los usuarios</h2>
+
+        <section class="form-section">
+            <h3>Agregar Usuario</h3>
+            <form id="addUserForm">
+                <label for="nombre_usuario">Nombre de usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+                <br>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <br>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br>
+                <label for="nombre_completo">Nombre completo:</label>
+                <input type="text" id="nombre_completo" name="nombre_completo" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+                <br>
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion"></textarea>
+                <br>
+                <label for="rol">Rol:</label>
+                <select id="rol" name="rol" required>
+                    <option value="administrador">Administrador</option>
+                    <option value="cliente">Cliente</option>
+                </select>
+                <br>
+                <button type="submit">Agregar Usuario</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Lista de Usuarios</h3>
+            <ul id="usersList" class="user-list"></ul>
+        </section>
+    </main>
+
+    <div id="editarUsuarioModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Editar Usuario</h3>
+            <form id="editarUserForm">
+                <label for="edit_nombre_usuario">Nombre de usuario:</label>
+                <input type="text" id="edit_nombre_usuario" name="nombre_usuario" required>
+                <br>
+                <label for="edit_correo">Correo:</label>
+                <input type="email" id="edit_correo" name="correo" required>
+                <br>
+                <label for="edit_contrasena">Contraseña:</label>
+                <input type="password" id="edit_contrasena" name="contrasena" required>
+                <br>
+                <label for="edit_nombre_completo">Nombre completo:</label>
+                <input type="text" id="edit_nombre_completo" name="nombre_completo" required>
+                <br>
+                <label for="edit_telefono">Teléfono:</label>
+                <input type="text" id="edit_telefono" name="telefono">
+                <br>
+                <label for="edit_direccion">Dirección:</label>
+                <textarea id="edit_direccion" name="direccion"></textarea>
+                <br>
+                <label for="edit_rol">Rol:</label>
+                <select id="edit_rol" name="rol" required>
+                    <option value="administrador">Administrador</option>
+                    <option value="cliente">Cliente</option>
+                </select>
+                <br>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Portátiles. Todos los derechos reservados.</p>
+        <p>Contacto: info@tienda.com</p>
+    </footer>
+
+    <script src="/JS/login.js"></script>
+    <script src="/JS/usuarios.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Cargar en XAMPP la base de datos que se encuentra en la carpeta DB
+
+Ejecutar la api que se encuentra en la carpeta API
+
+lanzar un live server con el archivo login.html
+
+Para ingresar como admin
+Alejo
+admin
+
+Para ingresar como cliente
+Carlos
+carlos

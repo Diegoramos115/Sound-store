@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órdenes - Tienda de Portátiles</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/CSS/ordenes.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <h1>Pedidos</h1>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="ordenes.html">Órdenes</a></li>
+            <li><a href="inventario.html" id="inventario-option" style="display:none;">Inventario</a></li>
+            <li><a href="usuarios.html" id="usuarios-option" style="display:none;">Usuarios</a></li>
+            <li class="right">
+                <div id="saludo-usuario" class="saludo-usuario">Hola, Usuario</div>
+                <a href="#" id="login-logout" onclick="logout()">Cerrar Sesión</a>
+                <a href="carrito.html" class="cart">
+                    <img src="Imagenes/Carrito.png" alt="Carrito" class="cart-icon">
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sección de órdenes -->
+    <main>
+        <section id="ordenes" class="ordenes">
+            <!-- Las órdenes se cargarán aquí dinámicamente -->
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tienda de Portátiles. Todos los derechos reservados.</p>
+        <p>Contacto: info@tienda.com</p>
+    </footer>
+
+    <script src="/JS/ordenes.js"></script>
+</body>
+</html>

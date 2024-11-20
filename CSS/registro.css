@@ -1,0 +1,82 @@
+/* registro.css */
+
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/Imagenes/background_login.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor del formulario de registro */
+.registro-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Encabezado del formulario */
+.registro-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Grupo de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Etiquetas de entrada */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover en el botón */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Enlace de iniciar sesión */
+.login-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Efecto hover en el enlace */
+.login-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Tienda de Portátiles</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/CSS/carrito.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Carrito de Compras</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="ordenes.html">Órdenes</a></li>
+            <li><a href="inventario.html" id="inventario-option" style="display:none;">Inventario</a></li>
+            <li><a href="usuarios.html" id="usuarios-option" style="display:none;">Usuarios</a></li>
+            <li class="right">
+                <div id="saludo-usuario" class="saludo-usuario">Hola, Usuario</div>
+                <a href="#" id="login-logout" onclick="logout()">Cerrar Sesión</a>
+                <a href="carrito.html" class="cart">
+                    <img src="Imagenes/Carrito.png" alt="Carrito" class="cart-icon">
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Tu Carrito</h2>
+        <section id="cartItems" class="cart-items">
+            <!-- Los productos en el carrito se cargarán aquí dinámicamente -->
+        </section>
+        <section class="cart-total">
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            <button id="checkoutBtn">Ir a Pagar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Portátiles. Todos los derechos reservados.</p>
+        <p>Contacto: info@tienda.com</p>
+    </footer>
+
+    <script src="/JS/carrito.js"></script>
+</body>
+</html>
